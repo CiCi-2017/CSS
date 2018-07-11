@@ -1,0 +1,567 @@
+	<!-- 目前主流浏览器chrome、safari、firefox、opera、360支持CSS3的大部分功能。IE10以后开始全面支持CSS3。
+	目前较新版本的浏览器都不需要前缀，但为了更好的向前兼容前缀少不了。添加前缀说明：CSS属性或规则尚未成为W3C标准的一部分，是浏览器的私有属性。
+	-webkit；chrome和safari   
+	-moz:firefox
+	-ms:IE
+	-o:opera -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html charset="UTF-8">
+	<!-- http-equiv 属性为名称/值对提供了名称。并指示服务器在发送实际的文档之前先在要传送给浏览器的 MIME 文档头部包含名称/值对。 -->
+	<title>Hello CSS3</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Fruktur' rel='stylesheet' type='text/css'>
+
+	<link href="CSS攻略.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+	<!-- 案例一 -->
+	<h1>1.旋转动画</h1>
+	<!-- 案例二 -->
+	<div id="stage">
+
+		<div id="doraemon"> 
+
+			<div id="face"> 
+
+				<div id="head_light"></div> 
+
+				<div id="eyes"> 
+
+					<div class="eye eye_left"></div> 
+
+					<div class="black_eye black_left"></div> 
+
+
+
+					<div class="eye eye_right"></div> 
+
+					<div class="black_eye black_right"></div> 
+
+				</div> 
+
+				<div id="base"> 
+
+					<div id="base_white"></div> 
+
+					<div id="nose"> 
+
+						<div id="nose_light"></div> 
+
+					</div> 
+
+					<div id="nose_line"></div> 
+
+					<div id="mouth"></div> 
+
+					<div id="mouth_rewrite"></div> 
+
+					<div id="firefox_mouth"></div> 
+
+
+
+					<div class="whiskers whi_right_top rotate160"></div> 
+
+					<div class="whiskers whi_right"></div> 
+
+					<div class="whiskers whi_right_bottom rotate20"></div> 
+
+
+
+					<div class="whiskers whi_left_top rotate20"></div> 
+
+					<div class="whiskers whi_left"></div> 
+
+					<div class="whiskers whi_left_bottom rotate160"></div> 
+
+				</div> 
+
+			</div> 
+
+			<div id="choker"> 
+
+				<div id="belt"></div> 
+
+				<div id="bell"> 
+
+					<div id="bell_line"></div> 
+
+					<div id="bell_circle"></div> 
+
+					<div id="bell_under"></div> 
+
+					<div id="bell_light"></div> 
+
+				</div> 
+
+			</div> 
+
+			<div id="body"> 
+
+				<div id="doutai"></div> 
+
+				<div class="base_white2 doutai_center"></div> 
+
+				<div id="pocket"> 
+
+					<div id="circle"></div> 
+
+					<div id="circle_rewrite"></div> 
+
+				</div> 
+
+			</div> 
+
+			<div id="hand_right"> 
+
+				<div id="arm_right"></div> 
+
+				<div class="hand_circle hand_right"></div> 
+
+				<div class="arm_rewrite_right"></div> 
+
+			</div> 
+
+			<div id="hand_left"> 
+
+				<div id="arm_left"></div> 
+
+				<div class="hand_circle hand_left"></div> 
+
+				<div class="arm_rewrite_left"></div> 
+
+			</div> 
+
+			<div id="foot"> 
+
+				<div id="foot_left"></div> 
+
+				<div id="foot_right"></div> 
+
+				<div id="foot_rewrite"></div> 
+
+			</div> 
+
+			<div id="shadow_doutai_arm"></div> 
+
+			<div id="shadow_doutai_left"></div> 
+
+			<div id="shadow_doutai_right"></div> 
+
+			<div id="shadow_belt"></div> 
+
+		</div> 
+
+	</div>
+
+	
+
+	
+
+
+	<!-- 【2-1 CSS边框圆角效果】 -->
+
+	<div class="radius">
+		<div class="circle">我是圆</div>
+		<div class="semi-circle">我是半圆</div>
+		<div class="right-semicircle">我是右半圆</div>
+	</div>
+
+	<!-- 【2-2 CSS3边框 阴影 box-shadow 】 -->
+
+	<div class="shadow">
+		
+		<div class="inset">我是内阴影</div>
+		<div class="outset">我是外阴影</div>
+		<div class="shadows">我是多阴影</div>
+		<div class="-x">-x偏移量</div>
+		<div class="-y">-y偏移量</div>
+		<div class="under">正下方阴影</div>
+
+	</div>
+
+	<!-- 【2-3为边框应用图片 border-image 】 -->
+
+	<div id="border_image">
+		为边框应用背景图片
+	</div>
+
+	<!-- 【3-1 CSS3颜色之RGBA】 -->	
+
+	<div class="opacity">
+		<p>背景是半透明的</p>
+	</div>
+
+	<!-- 【3-1 CSS3颜色之渐变颜色】 -->	
+
+	<div class="gradient">
+		<div class="to top">下->上</div>
+		<div class="to right">左->右</div>
+		<div class="to bottom">上->下</div>
+		<div class="to left">右->左</div>
+		<div class="to topleft">右下->左上</div>
+		<div class="to topright">左下->右上</div>
+		<div class="to bottomleft">右上->左下</div>
+		<div class="to bottomright">左上->右下</div>
+	</div>	
+
+	<!-- 【4-1 CSS3文字与字体 text-overflow 与 word-wrap】 -->
+
+	<div class="text">
+		<div class="overflow">一二三四五六七八九 one two three 否认 five 思想 seven eight 你呢 一二三四五六七八九 one two three 否认 five 思想 seven eight 你呢 
+		</div>
+		<div class="normal">nomalnormal:连续内容显示完nonomalnormalmalnormalnomalnormal换行nomal:连续内容显示完换行
+		</div>	
+		<div class="break">break-word:内容遇边界换行break-wordbreak-wordbreak-word:内容遇边界换行
+		</div>	
+	</div>
+
+	<!-- 【4-2 CSS3文字与字体 嵌入字体@font-face】 -->
+
+	<div class="font">
+		Contact
+	</div>
+
+	<!-- 【4-3 CSS3文字与字体 文本阴影text-shadow】 用上边文本-->
+	<!-- 【5-1 CSS3背景 background-origin背景原点】-->
+
+	<div class="origin">
+		<span class="padding">padding</span>
+		<div class="center"></div>
+	</div>
+
+	<!-- 【5-2 CSS3背景 background-clip 背景裁剪】 -->	
+
+	<div class="clip">
+		<span class="padding">padding</span>
+		<div class="center"></div>
+	</div>
+
+	<!-- 【5-3 CSS3背景  background-size 背景图片大小】 -->
+	<div class="bgsize">
+		<div class="bgs auto"> 背景图片参数设置</div>
+	</div>
+
+	<!-- 【5-4 CSS3背景  multiple backgrounds 多重背景】 -->
+
+	<div class="demo"></div>
+	<div class="task"></div>
+
+	<!-- 【5-5 CSS3背景  制作导航菜单综合练习题】 -->
+
+	<ul class="nav">
+		<li><a href="">Home</a></li>
+		<li><a href="">About Me</a></li>
+		<li><a href="">Portfolio</a></li>
+		<li><a href="">Blog</a></li>
+		<li><a href="">Resources</a></li>
+		<li><a href="">Contact Me</a></li>
+	</ul>
+
+	<!-- 【6-1 CSS3选择器 属性选择器】 -->
+
+	<a href="##" class="columnNews">我的背景想变成红色</a>
+	<a href="##" class="columnVideo">我的背景想变成红色</a>
+	<a href="##" class="columnAboutUs">我的背景想变成红色</a><br/>
+	<a href="1.doc">我的背景想变成绿色</a>
+	<a href="2.doc">我的背景想变成绿色</a><br/>
+	<a href="##" title="this is a box">我的背景想变成蓝色</a>
+	<a href="##" title="box1">我的背景想变成蓝色</a>
+	<a href="##" title="there is two boxs">我的背景想变成蓝色</a>
+
+	<!-- 【6-2 CSS3 结构性伪类选择器—root】 CSS里-->
+
+	<!-- 【6-3 CSS3 结构性伪类选择器—not】CSS里-->
+
+	<!-- <div class="not">
+	<div id="header">页头</div>
+    <div id="page">页体</div>
+    <div id="footer">页脚</div> -->
+
+    <!-- 【6-4 CSS3 结构性伪类选择器—empty】CSS里 -->
+
+	<!-- <div>我这里有内容</div>
+		<div>  </div>
+		<div></div> -->
+
+	<!-- 【6-5 CSS3 结构性伪类选择器—empty】 -->
+
+ 	<div class="menuSectin" id="brand">
+        <h2><a href="#brand">Brand</a></h2>
+        <p>content for Brand</p>
+    </div>
+
+	<h2><a href="#jake">jake</a></h2>
+	<div class="menuSection" id="jake">
+		content for jake
+	</div>
+
+	<!-- 【6-6 CSS3 结构性伪类选择器—first-child】 -->
+
+	<ul>
+	  <li><a href="##">Link1</a></li>
+	  <li><a href="##">Link2</a></li>
+	  <li><a href="##">Link3</a></li>
+	  <li><a href="##">Link4</a></li>
+	  <li><a href="##">Link5</a></li>
+	</ul>
+
+ <!-- 【6-7 CSS3 结构性伪类选择器:last-child】 CSS里-->
+
+	<!-- <ul>
+	  <li>Item1</li>
+	  <li>Item2</li>
+	  <li>Item3</li>
+	  <li>Item5</li>
+	  <li>Item6</li>
+	</ul> -->
+
+<!-- 【6-8 CSS3 结构性伪类选择器:nth-child(n)】 -->
+
+<ol>
+  <li>item1</li>
+  <li>item2</li>
+  <li>item3</li>
+  <li>item4</li>
+  <li>item5</li>
+  <li>item6</li>
+  <li>item7</li>
+  <li>item8</li>
+  <li>item9</li>
+  <li>item10</li>
+</ol>
+
+<!-- 【6-9 CSS3 结构性伪类选择器: nth-last-child(n)】 上例-->
+
+<!-- 【6-10 CSS3 结构性伪类选择器:first-of-type】 同上-->
+
+<!-- 【6-11 CSS3 nth-of-type(n)选择器】 -->
+
+<!-- <div class="wrappe">
+  <div>我是一个Div元素</div>
+  <p>我是一个段落元素</p>
+  <div>我是一个Div元素</div>
+  <p>我是一个段落</p>
+  <div>我是一个Div元素</div>
+  <p>我是一个段落</p>
+  <div>我是一个Div元素</div>
+  <p>我是一个段落</p>
+  <div>我是一个Div元素</div>
+  <p>我是一个段落</p>
+  <div>我是一个Div元素</div>
+  <p>我是一个段落</p>
+  <div>我是一个Div元素</div>
+  <p>我是一个段落</p>
+  <div>我是一个Div元素</div>
+  <p>我是一个段落</p>
+</div> -->
+
+<!-- 【6-12 CSS3 last-of-type(n)选择器】 -->
+
+<!-- <div class="wrapper">
+  <div>我是第一个Div元素</div>
+  <div>我是第二个Div元素</div>
+  <div>我是第三个Div元素</div>
+  <p>我是第一个段落</p>
+  <p>我是第二个段落</p>
+  <p>我是第三个段落</p>
+</div> -->
+
+<!-- 【6-13 CSS3 nth-last-of-type(n)选择器】 -->
+<!-- 【6-14 CSS3 only-child选择器】 -->
+<!-- 【6-15 CSS3  only-of-type选择器】 -->
+
+<!-- 【7-1 CSS3选择器 :enabled选择器】 -->
+<!-- <form action="#">
+  <div>
+    <label for="enabled">可用输入框:</label>
+    <input type="text" id="enabled" />
+  </div>
+
+  <div>
+    <label for="disabled">禁用输入框:</label>
+    <input type="submit" value="禁止"  disabled />
+  </div>
+ </form> -->
+
+
+<!-- 【7-2 CSS3选择器 :disabled选择器】 CSS里-->
+
+<!-- 【7-3 CSS3选择器 :checked选择器】 -->
+<!-- <form action="#">
+  <div class="wrapper">
+    <div class="box">
+      <input type="radio" checked="checked"  id="boy" name="1" /><span></span>
+    </div>
+    <label for="boy">男</label>
+  </div>
+  
+  <div class="wrapper">
+    <div class="box">
+      <input type="radio"  id="girl" name="1"  /><span></span>
+    </div>
+    <label for="girl">女</label>
+  </div>
+</form> -->
+
+
+<!-- 【7-4 CSS3选择器 ::selection选择器】 -->
+<!-- 【7-5 CSS3选择器 :read-only选择器】 -->
+<!-- 【7-6 CSS3选择器 :read-write选择器】 -->
+
+
+
+
+
+<!-- 【7-7 CSS3选择器 ::before和::after】 -->
+<div class="box effect">
+<h3>Shadow Effect </h3>
+</div>
+
+
+
+
+<!-- 【8-1 CSS3变形旋转 rotate()】 -->
+<div class="wrapper1">
+ <div><span>我不想旋转(^_^)</span></div>
+</div>
+
+
+
+
+
+<!-- 【8-2 CSS3变形 扭曲 skew()】 -->
+<div class="wrapper2">
+  <div><span>我不想被扭曲(^_^)</span></div>
+</div>
+
+
+
+
+<!-- 【8-3 CSS3变形 缩放 scale()】 -->
+<div class="wrapper3">
+  <div>我将缩小0.8</div>
+</div>
+
+
+
+
+<!-- 【8-4 CSS3变形  位移 translate()】 -->
+<div class="wrapper4">
+	我不知道我的宽和高是多少，我要实现水平居中
+</div>
+
+
+
+
+
+<!-- 【8-5 CSS3变形 矩阵 matrix（）】 -->
+<div class="wrapper5">
+  <div></div>
+</div>
+
+
+
+
+<!-- 【8-6 CSS3变形: 原点 transform-origin】 -->
+<div class="wrapper6">
+  <div>我修改原点之后在进行15度的扭曲</div>
+</div>
+
+
+
+
+<!-- 【8-7 CSS3中的动画: 过渡属性 transition-property】 -->
+<div class="wrapper7"></div>
+
+
+
+
+<!-- 【8-8 CSS3中的动画: 过渡所需时间 transition-duration】 8-7中-->
+<!-- 【8-9 CSS3中的动画: 过渡函数 transition-timing-function】 8-7中-->
+<!-- 【8-10 CSS3中的动画: 过渡延迟时间 transition-delay】 8-7中-->
+
+
+<!-- 【9-1 CSS3 Keyframes介绍】 -->
+<div class="wrapper9">鼠标放在我身上</div>
+
+
+
+<!-- 【9-2 CSS3中调用动画】 -->
+<div class="wrapper10">
+	<span></span>
+</div>
+
+
+
+<!-- 【9-3 CSS3中设置动画播放时间】 9-2-->
+<!-- 【9-5 CSS3中设置动画开始播放的时间】 9-2-->
+<!-- 【9-6 CSS3中设置动画播放次数】 9-2-->
+<!-- 【9-7 CSS3中设置动画播放方向】 9-2-->
+<!-- 【9-8 CSS3中设置动画的播放状态】 9-2-->
+<!-- 【9-9 CSS3中设置动画时间外属性】 9-1-->
+<!-- 【9-10 3D旋转】案例：3D旋转导航.html -->
+
+
+
+<!-- 【10-1 CSS3 多列布局——Columns】 -->
+<div class="columns">
+  <h2>我要分列显示</h2>
+  <p>为了能在Web页面中方便实现类似报纸、杂志那种多列排版的布局，W3C特意给CSS3增加了一个多列布局模块（CSS Multi Column Layout Module）。它主要应用在文本的多列布局方面。对于文本的多列布局，我想大家并不陌生，因为报纸和杂志上我们随处可见，这种布局在报纸和杂志上都使用了几十年了，但需要在Web页面上实现文本的多列布局，正如下图所示。</p>
+  <p>为了能在Web页面中方便实现类似报纸、杂志那种多列排版的布局，W3C特意给CSS3增加了一个多列布局模块（CSS Multi Column Layout Module）。它主要应用在文本的多列布局方面。对于文本的多列布局，我想大家并不陌生，因为报纸和杂志上我们随处可见，这种布局在报纸和杂志上都使用了几十年了，但需要在Web页面上实现文本的多列布局，正如下图所示。</p>
+  <p>为了能在Web页面中方便实现类似报纸、杂志那种多列排版的布局，W3C特意给CSS3增加了一个多列布局模块（CSS Multi Column Layout Module）。它主要应用在文本的多列布局方面。对于文本的多列布局，我想大家并不陌生，因为报纸和杂志上我们随处可见，这种布局在报纸和杂志上都使用了几十年了，但需要在Web页面上实现文本的多列布局，正如下图所示。</p>
+  <p>为了能在Web页面中方便实现类似报纸、杂志那种多列排版的布局，W3C特意给CSS3增加了一个多列布局模块（CSS Multi Column Layout Module）。它主要应用在文本的多列布局方面。对于文本的多列布局，我想大家并不陌生，因为报纸和杂志上我们随处可见，这种布局在报纸和杂志上都使用了几十年了，但需要在Web页面上实现文本的多列布局，正如下图所示。</p>
+  <p>为了能在Web页面中方便实现类似报纸、杂志那种多列排版的布局，W3C特意给CSS3增加了一个多列布局模块（CSS Multi Column Layout Module）。它主要应用在文本的多列布局方面。对于文本的多列布局，我想大家并不陌生，因为报纸和杂志上我们随处可见，这种布局在报纸和杂志上都使用了几十年了，但需要在Web页面上实现文本的多列布局，正如下图所示。</p>
+  <p>为了能在Web页面中方便实现类似报纸、杂志那种多列排版的布局，W3C特意给CSS3增加了一个多列布局模块（CSS Multi Column Layout Module）。它主要应用在文本的多列布局方面。对于文本的多列布局，我想大家并不陌生，因为报纸和杂志上我们随处可见，这种布局在报纸和杂志上都使用了几十年了，但需要在Web页面上实现文本的多列布局，正如下图所示。</p>
+</div>
+
+
+<!-- 【10-2 CSS3 多列布局——column-width】 10-1-->
+<!-- 【10-3 CSS3 多列布局——column-count】 10-1-->
+<!-- 【10-4 CSS3 列间距column-gap】 10-1-->
+<!-- 【10-5 CSS3  列表边框column-rule】 10-1-->
+<!-- 【10-6 CSS3  跨列设置column-span】 10-1-->
+
+
+<!-- 【10-7 CSS3  盒子模型】 -->
+<div id="header">Header Content</div>
+<div id="page">
+  <div class="main">Main Content</div>
+  <div class="sidebar">Sidebar Content</div>
+</div>
+<div id="footer">Footer Content</div>  
+
+
+<!-- 【10-8 CSS3 伸缩布局】 -->
+<!-- 【11-1、2 Media Queries——媒体类型】 -->
+<!-- 【11-3 Media Queries使用方法】 -->
+<!-- 【11-4 、5 Responsive响应式设计】 -->
+<!-- 【11-6 Responsive布局技巧】 -->
+<!-- 【11-7 Responsive设计——meta标签】 -->
+<!-- 【11-8 Responsive设计——不同设备的分辨率设置】 -->
+
+
+
+<!-- 【12-1 自由缩放属性 resize】 -->
+<textarea name="" id="" cols="30" rows="10">
+	fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+</textarea>
+
+
+<!-- 【12-2 CSS3外轮廓属性-outline】 -->
+<div class="outline">
+</div>
+
+
+<!-- 【12-3 CSS生成内容】 -->
+<h2>我是标题，在我前面加入内容吧</h2>
+
+<!-- 【12-4 制作3D旋转视频展示区】 3D旋转导航2.html-->
+
+
+
+
+
+</body>
+</html>
